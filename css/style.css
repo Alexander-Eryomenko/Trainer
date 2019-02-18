@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'MetropolisMedium';
+    src: url('../fonts/MetropolisMedium.eot');
+    src: url('../fonts/MetropolisMedium.eot') format('embedded-opentype'),
+    url('../fonts/MetropolisMedium.woff2') format('woff2'),
+    url('../fonts/MetropolisMedium.woff') format('woff'),
+    url('../fonts/MetropolisMedium.ttf') format('truetype'),
+    url('../fonts/MetropolisMedium.svg#MetropolisMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue_regular-webfont.eot');
+    src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+    url('../fonts/bebasneue_regular-webfont.woff') format('woff'),
+    url('../fonts/bebasneue_regular-webfont.ttf') format('truetype'),
+    url('../fonts/bebasneue_regular-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.bg-header-wallpaper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: inline-block;
+}
+
+.bg-header-wallpaper img {
+    width: 100%;
+}
+
+/*.header-wrapper {*/
+/*background: url(../img/bg-wallpaper-header.jpg) no-repeat 50% 0;*/
+/*background-size: cover;*/
+/*min-height: 358px;*/
+/*}*/
+
+.header-holder {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 34px 25px 12px;
+    position: relative;
+    z-index: 5;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header_top {
+    border-bottom: 2px solid #464646;
+    padding-bottom: 21px;
+}
+
+.header__right {
+    float: right;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25px;
+    border-radius: 5px;
+    min-width: 170px;
+    line-height: 42px;
+    color: #fcfcfc;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.online_store:before {
+    background-image: url("../img/icon-store.png");
+    content: "";
+    width: 19px;
+    height: 18px;
+    float: left;
+    margin: 12px 13px;
+}
+
+.online_store {
+    background-color: #252525;
+    font-family: 'MetropolisMedium';
+}
+
+.sign_up:before {
+    content: "";
+    background-image: url("../img/icon-signup.png");
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin: 12px 15px;
+}
+
+.sign_up {
+    background-color: #fa090a;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.log_in {
+    background-color: #464646;
+    font-family: 'MetropolisMedium';
+    padding: 12px;
+    line-height: 18px;
+}
+
+.log_in i {
+    margin-right: 14px;
+}
+
+.search {
+    border: none;
+    background-color: #ebebeb;
+    display: inline-block;
+    margin-left: 5px;
+    width: 208px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.search input {
+    border: none;
+    background: none;
+    color: #989898;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 12px;
+    border-radius: 5px;
+    padding: 15px 17px;
+    float: left;
+    width: 80%;
+}
+
+.search button:after {
+    background-image: url("../img/icon-button-search.png");
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    margin: 12px 14px 12px 0;
+}
+
+.search button {
+    float: right;
+    width: 19%;
+    border: none;
+    background: none;
+
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button:active {
+    outline: none;
+}
+
+.header_nav_list {
+    margin: 0 0 0 -30px;
+    padding: 0;
+    list-style: none;
+    float: left;
+    font-family: 'bebas_neueregular';
+}
+
+.header_nav_item {
+    float: left;
+    margin-left: 30px;
+}
+
+.header_nav_button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 26px;
+    border-bottom: 4px solid transparent;
+    display: block;
+    transition: border-color 0.25s linear 0s;
+
+}
+
+.header_nav_button:hover {
+    border-color: #ff0000;
+}
+
+.header_nav {
+    padding: 18px 0 12px;
+    text-transform: uppercase;
+}
+
+.header_sharing {
+    float: right;
+    margin-left: -18px;
+}
+
+.header_sharing_button {
+    width: 29px;
+    height: 30px;
+    background: #fa090a;
+    float: left;
+    margin-left: 18px;
+    padding: 0 3px;
+    color: #000;
+    line-height: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.header_title {
+    text-align: center;
+    text-transform: uppercase;
+    font: 400 50px/55px 'bebas_neueregular', Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: 0 25px;
+    padding: 58px 0 30px;
+    border-bottom: 2px solid #ff0000;
+    position: absolute;
+    width: 100%;
+}
+
+.ui-dialog{
+    width: 100%!important;
+    max-width: 750px!important;
+    padding: 0px;
+    border: 0px;
+}
+.ui-dialog .ui-dialog-title{
+    font: 400 24px/30px Arial Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    line-height: 100px;
+    color: #FFF;
+    font-size: 24px;
+}
+.ui-corner-all{
+    border-radius: 0 0 10px 10px;
+}
+.ui-draggable-handle{
+    border-radius: 0px;
+}
+.ui-dialog .ui-dialog-titlebar-close{
+    display: none;
+}
+.ui-dialog .ui-dialog-titlebar{
+    background-color: black;
+
+}
+.ui-widget-header, .ui-widget.ui-widget-content{
+    border: none;
+}
+
+.ui-dialog .ui-dialog-content{
+    padding-top: 40px;
+    padding-bottom: 166px;
+}
+
+form{
+    margin: auto;
+    max-width: 566px;
+}
+
+label{
+    float: left;
+    max-width: 25%;
+    text-align: center;
+
+    color: #363636;
+    font: 400 18px/24px Arial Helvetica, sans-serif;
+}
+
+input{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #b7b7b7;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+.input-wrapper{
+    overflow: hidden;
+    padding: 0 0 40px 60px;
+}
+
+.button-reset-password{
+    background-color: #d3d3d3;
+    font: 500 70px/20px Arial Helvetica, sans-serif;
+    box-shadow: none !important;
+    color: #000000;
+    width: 100%;
+    padding: 22px 110px 21px 110px;
+    margin-bottom: 29px;
+}
+
+.button-reset-password:focus{
+    outline: none;
+}
+
+.or{
+    font: 400 22px/28px Arial Helvetica, sans-serif;
+    color: #363636;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.log-in-facebook{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4966a5;
+    color: #ffffff !important;
+    font: 400 24px/30px Arial Helvetica, sans-serif;
+    padding: 22px 100px 22px 0;
+    /*margin-bottom: 165px;*/
+
+}
+
+.log-in-facebook:before{
+    content: "";
+    background-image: url("../img/facebook.png");
+    width: 12px;
+    height: 24px;
+    float: left;
+    margin-left: 170px;
+    text-align: center;
+}
+
+/*.ui-widget-content a{*/
+    /*color: white;*/
+/*}*/

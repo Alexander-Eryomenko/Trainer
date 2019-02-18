@@ -1,0 +1,7 @@
+обнуление:
+
+ul:after{
+content:"";
+display:block;
+clear: both;
+}
